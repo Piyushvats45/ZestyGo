@@ -5,8 +5,10 @@ import { Link } from 'react-router-dom';
 import { StoreContext } from '../../context/StoreContext';
 
 const Navbar = ({setShowLogin}) => {
+
     const [menu, setMenu] = useState("home");
     const{getTotalCartAmount} = useContext(StoreContext);
+
   return (
     <div className='navbar'>
         <Link to='/'><h1 className='logo'>ZestyGo</h1></Link>
